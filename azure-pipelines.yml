@@ -28,7 +28,6 @@ steps:
     Contents: |
         azuredeploy.parameters.json
         azuredeploy.json
-  
   targetFolder: $(Build.ArtifactStagingDirectory)
 
 - task: PublishBuildArtifacts@1
