@@ -30,5 +30,6 @@ BRIGHT PIPELINE
 MISC
     - https://github.com/Azure/azure-quickstart-templates
     - .yml releases coming TBC was 2018 Q3, Q4, 2019 Q1, Q2
+    - MyGet fails often
 
 
