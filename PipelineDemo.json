@@ -1,0 +1,384 @@
+{
+  "source": 2,
+  "revision": 4,
+  "description": null,
+  "createdBy": {
+    "displayName": "Jacob Polden",
+    "url": "https://spsprodweu4.vssps.visualstudio.com/Acabdc854-57ad-4c65-97f2-0d2294bc815e/_apis/Identities/8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+      }
+    },
+    "id": "8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+    "uniqueName": "Jacob.Polden@peninsula-uk.com",
+    "imageUrl": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4",
+    "descriptor": "aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+  },
+  "createdOn": "2019-04-29T10:50:41.350Z",
+  "modifiedBy": {
+    "displayName": "Jacob Polden",
+    "url": "https://spsprodweu4.vssps.visualstudio.com/Acabdc854-57ad-4c65-97f2-0d2294bc815e/_apis/Identities/8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+      }
+    },
+    "id": "8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+    "uniqueName": "Jacob.Polden@peninsula-uk.com",
+    "imageUrl": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4",
+    "descriptor": "aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+  },
+  "modifiedOn": "2019-04-29T12:22:22.440Z",
+  "isDeleted": false,
+  "variables": {},
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 124,
+      "name": "Deploy infrastructure",
+      "rank": 1,
+      "owner": {
+        "displayName": "Jacob Polden",
+        "url": "https://spsprodweu4.vssps.visualstudio.com/Acabdc854-57ad-4c65-97f2-0d2294bc815e/_apis/Identities/8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+          }
+        },
+        "id": "8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+        "uniqueName": "Jacob.Polden@peninsula-uk.com",
+        "imageUrl": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4",
+        "descriptor": "aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+      },
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 378
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 379 },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 380
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 3,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "94a74903-f93f-4075-884f-dc11f34058b4",
+              "version": "2.*",
+              "name": "Azure Deployment:Create Or Update Resource Group action on pipelinesdemo",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "ConnectedServiceName": "6502e0b5-e425-49c4-94bc-4e12df2b7ad1",
+                "action": "Create Or Update Resource Group",
+                "resourceGroupName": "pipelinesdemo",
+                "location": "West Europe",
+                "templateLocation": "Linked artifact",
+                "csmFileLink": "",
+                "csmParametersFileLink": "",
+                "csmFile": "$(System.DefaultWorkingDirectory)/_JacobPoldenValtech.AzureDevopsDemo/drop/azuredeploy.json",
+                "csmParametersFile": "$(System.DefaultWorkingDirectory)/_JacobPoldenValtech.AzureDevopsDemo/drop/azuredeploy.parameters.json",
+                "overrideParameters": "",
+                "deploymentMode": "Incremental",
+                "enableDeploymentPrerequisites": "None",
+                "deploymentGroupEndpoint": "",
+                "project": "",
+                "deploymentGroupName": "",
+                "copyAzureVMTags": "true",
+                "runAgentServiceAsUser": "false",
+                "userName": "",
+                "password": "",
+                "outputVariable": "",
+                "deploymentName": "",
+                "deploymentOutputs": "",
+                "addSpnToEnvironment": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "ReleaseStarted", "conditionType": 1, "value": "" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 2387,
+        "url": "https://vsrm.dev.azure.com/BrightSafe/eb9d38b9-6d51-4461-8697-d70dfb21becd/_apis/Release/releases/2387",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {},
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/BrightSafe/_apis/public/Release/badge/eb9d38b9-6d51-4461-8697-d70dfb21becd/30/124"
+    },
+    {
+      "id": 125,
+      "name": "Deploy App",
+      "rank": 2,
+      "owner": {
+        "displayName": "Jacob Polden",
+        "url": "https://spsprodweu4.vssps.visualstudio.com/Acabdc854-57ad-4c65-97f2-0d2294bc815e/_apis/Identities/8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+          }
+        },
+        "id": "8db82e25-5d2e-61b6-a045-457bbd9bbc98",
+        "uniqueName": "Jacob.Polden@peninsula-uk.com",
+        "imageUrl": "https://dev.azure.com/BrightSafe/_apis/GraphProfile/MemberAvatars/aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4",
+        "descriptor": "aad.OGRiODJlMjUtNWQyZS03MWI2LWEwNDUtNDU3YmJkOWJiYzk4"
+      },
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 381
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 382 },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 383
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 3,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "497d490f-eea7-4f2b-ab94-48d9c1acdcb1",
+              "version": "3.*",
+              "name": "Azure App Service Deploy: bright-pipelinesdemo-webapp",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "ConnectedServiceName": "6502e0b5-e425-49c4-94bc-4e12df2b7ad1",
+                "WebAppKind": "app",
+                "WebAppName": "bright-pipelinesdemo-webapp",
+                "DeployToSlotFlag": "false",
+                "ResourceGroupName": "",
+                "SlotName": "",
+                "ImageSource": "Registry",
+                "AzureContainerRegistry": "",
+                "AzureContainerRegistryLoginServer": "",
+                "AzureContainerRegistryImage": "",
+                "AzureContainerRegistryTag": "",
+                "DockerRepositoryAccess": "public",
+                "RegistryConnectedServiceName": "",
+                "PrivateRegistryImage": "",
+                "PrivateRegistryTag": "",
+                "DockerNamespace": "",
+                "DockerRepository": "",
+                "DockerImageTag": "",
+                "VirtualApplication": "",
+                "Package": "$(System.DefaultWorkingDirectory)/**/*.zip",
+                "BuiltinLinuxPackage": "$(System.DefaultWorkingDirectory)/**/*.zip",
+                "RuntimeStack": "",
+                "StartupCommand": "",
+                "WebAppUri": "",
+                "ScriptType": "",
+                "InlineScript": ":: You can provide your deployment commands here. One command per line.",
+                "ScriptPath": "",
+                "GenerateWebConfig": "false",
+                "WebConfigParameters": "",
+                "AppSettings": "",
+                "ConfigurationSettings": "",
+                "TakeAppOfflineFlag": "true",
+                "UseWebDeploy": "false",
+                "SetParametersFile": "",
+                "RemoveAdditionalFilesFlag": "false",
+                "ExcludeFilesFromAppDataFlag": "true",
+                "AdditionalArguments": "-retryAttempts:6 -retryInterval:10000",
+                "RenameFilesFlag": "true",
+                "XmlTransformation": "false",
+                "XmlVariableSubstitution": "false",
+                "JSONFiles": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "Deploy infrastructure", "conditionType": 2, "value": "4" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 2387,
+        "url": "https://vsrm.dev.azure.com/BrightSafe/eb9d38b9-6d51-4461-8697-d70dfb21becd/_apis/Release/releases/2387",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {},
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/BrightSafe/_apis/public/Release/badge/eb9d38b9-6d51-4461-8697-d70dfb21becd/30/125"
+    }
+  ],
+  "artifacts": [],
+  "triggers": [],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [],
+  "pipelineProcess": { "type": 1 },
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseNew"
+    }
+  },
+  "id": 30,
+  "name": "PipelineDemo",
+  "path": "\\",
+  "projectReference": null,
+  "url": "https://vsrm.dev.azure.com/BrightSafe/eb9d38b9-6d51-4461-8697-d70dfb21becd/_apis/Release/definitions/30",
+  "_links": {
+    "self": {
+      "href": "https://vsrm.dev.azure.com/BrightSafe/eb9d38b9-6d51-4461-8697-d70dfb21becd/_apis/Release/definitions/30"
+    },
+    "web": {
+      "href": "https://dev.azure.com/BrightSafe/eb9d38b9-6d51-4461-8697-d70dfb21becd/_release?definitionId=30"
+    }
+  }
+}
